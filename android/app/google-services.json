@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "494381381149",
+    "project_id": "smart-synergies-4ba0c",
+    "storage_bucket": "smart-synergies-4ba0c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494381381149:android:4fdad171391c66f2e0f8f4",
+        "android_client_info": {
+          "package_name": "com.smart_synergies_admin.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjuVAjPtlSWsX523eWoJdKJMx1oUIdFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494381381149:android:b1538e959b5f12ede0f8f4",
+        "android_client_info": {
+          "package_name": "com.smart_synergies_user.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFjuVAjPtlSWsX523eWoJdKJMx1oUIdFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
