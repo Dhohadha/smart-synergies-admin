@@ -61,10 +61,11 @@ class _AddUserScreenState extends State<AddUserScreen> {
                 ),
                 const SizedBox(height: 15),
                 _buildTextField(
-                  'Primary Phone',
+                  'Primary Phone (Optional)',
                   _phoneController,
                   Icons.phone,
                   type: TextInputType.phone,
+                  isOptional: true,
                 ),
                 const SizedBox(height: 30),
 
@@ -87,19 +88,21 @@ class _AddUserScreenState extends State<AddUserScreen> {
                   children: [
                     Expanded(
                       child: _buildTextField(
-                        'No. of Ponds',
+                        'No. of Ponds (Optional)',
                         _pondsController,
                         Icons.water_drop_outlined,
                         type: TextInputType.number,
+                        isOptional: true,
                       ),
                     ),
                     const SizedBox(width: 15),
                     Expanded(
                       child: _buildTextField(
-                        'No. of Aerators',
+                        'No. of Aerators (Optional)',
                         _aeratorsController,
                         Icons.air_outlined,
                         type: TextInputType.number,
+                        isOptional: true,
                       ),
                     ),
                   ],
@@ -201,11 +204,12 @@ class _AddUserScreenState extends State<AddUserScreen> {
     TextEditingController controller,
     IconData icon, {
     TextInputType type = TextInputType.text,
+    bool isOptional = false,
   }) {
     return TextFormField(
       controller: controller,
       keyboardType: type,
-      validator: (val) => val == null || val.trim().isEmpty ? 'Required field' : null,
+      validator: isOptional ? null : (val) => val == null || val.trim().isEmpty ? 'Required field' : null,
       decoration: InputDecoration(
         labelText: label,
         labelStyle: TextStyle(color: Colors.grey.shade600),
